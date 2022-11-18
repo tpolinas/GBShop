@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="8OL-Vb-WMn" customClass="ImageCell" customModule="GBShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8OL-Vb-WMn" id="8QE-Mo-JgX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g73-aE-MM3">
+                        <rect key="frame" x="22" y="17" width="276" height="81"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="g73-aE-MM3" secondAttribute="bottom" constant="6" id="5RW-RP-ZCw"/>
+                    <constraint firstItem="g73-aE-MM3" firstAttribute="centerY" secondItem="8QE-Mo-JgX" secondAttribute="centerY" id="ELl-GQ-orW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g73-aE-MM3" secondAttribute="trailing" constant="6" id="bGH-7u-By8"/>
+                    <constraint firstItem="g73-aE-MM3" firstAttribute="leading" secondItem="8QE-Mo-JgX" secondAttribute="leadingMargin" constant="6" id="jc4-9V-cDS"/>
+                    <constraint firstItem="g73-aE-MM3" firstAttribute="top" secondItem="8QE-Mo-JgX" secondAttribute="topMargin" constant="6" id="lzn-c4-tOb"/>
+                    <constraint firstItem="g73-aE-MM3" firstAttribute="centerX" secondItem="8QE-Mo-JgX" secondAttribute="centerX" id="yGg-dN-qx1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="6tV-xv-ixt"/>
+            <connections>
+                <outlet property="imageProd" destination="g73-aE-MM3" id="C80-Bn-Dip"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="37.834821428571423"/>
+        </tableViewCell>
+    </objects>
+</document>
